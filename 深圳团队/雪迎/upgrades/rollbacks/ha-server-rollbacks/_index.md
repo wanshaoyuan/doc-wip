@@ -1,11 +1,13 @@
 ---
-title: Kubernetes 回滚
+title: 高可用回滚
 ---
 
-如果升级Rancher且升级未成功完成，则可能需要将Rancher Server回滚到最后的正常状态。
+如果升级 Rancher 且升级未成功完成，则可能需要将 Rancher Server 回滚到最后的正常状态。
 
-要还原Rancher，请遵循此处详述的过程：[还原备份-Kubernetes安装](/docs/backups/restorations/ha-restoration)
+要还原 Rancher，请遵循此处详述的过程：[恢复高可用 Rancher](/docs/backups/restorations/ha-restoration/_index)
 
-还原Rancher Server集群的快照会将Rancher还原到快照时的版本和状态。
+还原 Rancher Server 集群的快照会将 Rancher 还原到该快照的版本和状态。
 
-> **注意:** 托管集群对其状态具有权威性。这意味着在还原快照后，还原rancher server将不会还原工作负载部署或在托管群集上所做的更改。
+:::important 警告！
+集群对其状态具有权威性。如果在进行快照之后，又对集群进行了更改或者在集群中部署了工作负载，那么将 Rancher Server 回滚到这个快照时，那些在进行快照之后的改动将会丢失。
+:::

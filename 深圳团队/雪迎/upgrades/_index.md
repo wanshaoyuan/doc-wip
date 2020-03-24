@@ -1,20 +1,19 @@
 ---
-title: 升级和回滚
+title: 升级回滚指南
 ---
 
-#### 升级 Rancher
+## 升级 Rancher
 
-- [升级](/docs/upgrades/upgrades/)
+- [升级](/docs/upgrades/upgrades/_index)
 
-#### 回滚不成功的升级
+## 回滚不成功的升级
 
-如果你的Rancher Server没有成功升级, 你可以回滚到升级之前的版本：
+如果你的 Rancher Server 没有成功升级，你可以回滚到升级之前的版本：
 
-- [回滚使用Docker安装的Rancher](/docs/upgrades/single-node-rollbacks)
-- [回滚安装在Kubernetes集群上的Rancher](/docs/upgrades/ha-server-rollbacks)
+- [回滚单节点 Rancher](/docs/upgrades/rollbacks/single-node-rollbacks/_index)
+- [回滚高可用 Rancher](/docs/upgrades/rollbacks/ha-server-rollbacks/_index)
 
-
-> **注意:** 如果要在以下两种情况下回滚到版本，则必须遵循一些额外的 [说明](/docs/upgrades/rollbacks/) 才能使集群正常工作。
+> **注意:** 如果要在以下两种情况下回滚版本，您必须执行一些[额外的步骤](/docs/upgrades/rollbacks/_index)来使集群正常工作。
 >
-> - 从v2.1.6 +回滚到v2.1.0-v2.1.5或v2.0.0-v2.0.10之间的任何版本。
-> - 从v2.0.11 +回滚到v2.0.0-v2.0.10之间的任何版本。
+> - 从 v2.1.6+ 回滚到 v2.1.0-v2.1.5 或 v2.0.0-v2.0.10 之间的任何版本。
+> - 从 v2.0.11+ 回滚到 v2.0.0-v2.0.10 之间的任何版本。
